@@ -67,6 +67,8 @@ def checkForAppt(driver):
                     )
             button[0].click()
 
+            sleep(random.randint(1,5))
+
             # Wait for pop=up dialog 
             ok_dialog = WebDriverWait(driver, 30).until(
             EC.presence_of_element_located((By.CLASS_NAME, 'jconfirm-buttons'))
@@ -124,7 +126,7 @@ def send_telegram_msg(message):
 logging.basicConfig(
     format="%(levelname)s:%(message)s",
     level=logging.INFO,
-    handlers=[logging.FileHandler(".\out.log"), logging.StreamHandler(sys.stdout)],
+    handlers=[logging.FileHandler(".\\out.log"), logging.StreamHandler(sys.stdout)],
 )
 
 email = "kmadith@gmail.com"
