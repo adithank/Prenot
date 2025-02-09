@@ -61,6 +61,12 @@ def login(driver):
 
 def checkForAppt(driver):
         while True:
+            
+            # Check if the popup dialog is still there
+            ok_dialog = driver.find_element(By.CLASS_NAME, 'jconfirm-buttons')
+            if ok_dialog:
+                ok_dialog.click()
+
             # Click on Book 
             button = driver.find_elements(
                         By.CSS_SELECTOR, "[href='/Services/Booking/4996']"

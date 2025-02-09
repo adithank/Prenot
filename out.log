@@ -1,3 +1,35 @@
 INFO:Timestamp: 2025-02-08 17:18:48.304877 - Successfully logged in.
 INFO:Timestamp: 2025-02-08 17:18:50.593290 - Dialog box detected. Re-trying in 5-6 minutes.
 INFO:Timestamp: 2025-02-08 17:25:06.480377 - Dialog box detected. Re-trying in 5-6 minutes.
+INFO:Exception Message: element click intercepted: Element <a href="/Services/Booking/4996">...</a> is not clickable at point (1128, 945). Other element would receive the click: <div class="jconfirm-cell">...</div>
+  (Session info: chrome=133.0.6943.60)
+Stacktrace:
+	GetHandleVerifier [0x00870A33+25139]
+	(No symbol) [0x00801134]
+	(No symbol) [0x006E0523]
+	(No symbol) [0x0072E600]
+	(No symbol) [0x0072C9C4]
+	(No symbol) [0x0072A557]
+	(No symbol) [0x0072981D]
+	(No symbol) [0x0071DEC5]
+	(No symbol) [0x0074CF6C]
+	(No symbol) [0x0071D954]
+	(No symbol) [0x0074D1E4]
+	(No symbol) [0x0076E738]
+	(No symbol) [0x0074CD66]
+	(No symbol) [0x0071BD99]
+	(No symbol) [0x0071D0D4]
+	GetHandleVerifier [0x00B73A23+3183139]
+	GetHandleVerifier [0x00B8FE8A+3298954]
+	GetHandleVerifier [0x00B8A462+3275874]
+	GetHandleVerifier [0x00907770+642928]
+	(No symbol) [0x0080A01D]
+	(No symbol) [0x00806E48]
+	(No symbol) [0x00806FE7]
+	(No symbol) [0x007F9CE0]
+	BaseThreadInitThunk [0x76BB5D49+25]
+	RtlInitializeExceptionChain [0x77BBCEBB+107]
+	RtlGetAppContainerNamedObjectPath [0x77BBCE41+561]
+
+INFO:HTTP Request: POST https://api.telegram.org/bot7171868311:AAFKK98ywDcc9miItSTGm99T7pweM6oP4ZY/sendMessage "HTTP/1.1 200 OK"
+INFO:Timestamp: 2025-02-08 17:30:09.882395 - Telegram message sent.
